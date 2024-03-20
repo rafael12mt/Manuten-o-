@@ -3,152 +3,73 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Manutencao Servido Primario</title>
+  <meta name="viewport" content="height=device-height, initial-scale=1.0">
+  <title>interface</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-<style>
-  body {
-    font-family: 'Segoe UI'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    margin: 0;
-    padding: 0;
-    background-color: #3498db;
-  }
-
-  header {
-    text-align: center; 
-    padding: 20px;
-    color: #fff;
-    background-color: #2980b9;
-  }
-
-  footer {
-    text-aling: center;
-    padding: 10px;
-    color: #fff;
-    background-color: #2980b9;
-    bottom: 0;
-    width: 100%;
-  }
-
-  main {
-    padding: 20px;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-
-  section {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #f1c40f;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-
-  }
-
-  h1 {
-    font-size: 36px; 
-    margin-bottom: 20px;
-    text-aling: center;
-  }
-
-  h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #2980b9;
-    text-aling: center;
-  }
-
-  p {
-    font-size: 18px;
-    line-heigth: 1.5;
-    margin-bottom: 20px;
-  }
-
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-
-  li {
-    margin-bottom: 10px;
-  }
-
-  li strong {
-    font-weigth: bold;
-  }
-
-  span#current-time {
-    font-weigth: bold;
-    color: #fff;
-    background-color: #2980b9;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-aling: center;
-  }
-
-  footer#footer1 {
-    background-color: #2980b9;
-    padding: 20px;
-    text-aling: center;
-    border-radius: 20px;
-  }
-</style>
-
 </head>
 
 <body>
-  <header>
-    <h1>Manutencao Do Servido</h1>
-     <footer>
-       <p>CBN Program Serve Primario</p>
-       <p>Endereco: Rua Mario Joaquim Pereira,3412 - Cascave-CE</p>
-       <p>Telefone: (85) 98812-1211</p>
-     </footer>
-  </header> 
-  <main>
-    <section>
-      <h2>Motivo da manutencao</h2>
-      <p>Estamos enfrentando poblemas na api do servido servido primario de versao 5G da CBN computer,posivelmente a API nova deixou inacesivel dados para os usuarios,nao precisa de preucupacao!</p>
-    </section>
-    <section>
-      <h2>Resolvendo A O Falhamneto do servido</h2>
-        <p>Nossa equipe de developes e programadores especionalizados estao trabalhando para resolver esse poblema.Caso tenha visto alguma iregularidade por favor entra em contato com a CBN comunic.</p>
-    </section>
-    <section>
-      <h2>Outras Informacoes</h2>
-         <ul>
-           <li>
-             <strong>Inicio da Manutencao:</strong> 7 de marco de 2024 as 13:29(horario de Brasilia)</li>  
-           <li><strong>Previsao da conclusao</strong>
-Inderterminada.Estamos dando nosso maximo para resolver o poblema o mais rapido posivel</li>
-          <li><strong>Contato De Emergencia</strong>Para qualquer emergencia entre em contato com cbncomputerwe@gmail.com</li>
-         </ul>
-    </section>
-    <section>
-      <h2>Hora Atual</h2>
-     <p> <span id="current-time"></span> </p>
-    </section>
+ <header>
+   <div class="container">
+     <div class="logo">
+      
+       <h1>TesteCodeStudy</h1>
+     </div>
+     <nav>
+       <ul>
+         <li><a href="#">Regras</a></li>
+         <li><a href="#">Entrar</a></li>
+         <li><a href="#">TecnologicStudy</a></li>
+       </ul>
+     </nav>
+   </div>
+ </header>
+   <section id="hero">
+     <div class="container">
+       <h1>Oque O TCS/TesteCodeStudy?</h1>
+       <p>O TCS e um site criado para programadores avaliar seus codigos(mostra erros presentes nele),avaliar FPS,CPU,GPU e outros, estamos com um terminal facil e bom.Teste Ja!</p>
+     </div>
+   </section>
 
-    <footer id="footer1">
-      <p>Manutencao do servido Primario/ criador: Rafael Silvia Inacio</p>
-    </footer>
-    <script> 
-      function updateTime() {
-        const currentTime = new Date();
-        const hours = currentTime.getHours();
-        const minutes = currentTime.getMinutes();
-        const seconds = currentTime.getSeconds();
-        const timeString = `${hours}:${minutes}:${seconds}`;
-        document.getElementById('current-time').textContent = timeString;
-      }
-      setInterval(updateTime, 1000);
-    </script>
-  </main>
+   <section id="about">
+     <div class="container">
+       <h2>Como Funcional</h2>
+       <p>Se voce gostou e quer saber mais sobre nossa ferramenta iremos falar de forma resumida de como ela funcional.A ferramenta que denominamos de CTP/CodigoTestadoAprovado os codigos inseridos no terminal nao ficam salvos em nosso servido,utilizamos a tecnoogia HTML,CSS,JS e outras tecnologias como python e c#</p>
+     </div>
+   </section>
+
+   <section id="servise">
+     <div class="container">
+        <h2>Planos De Terminal</h2>
+       <div class="servise">
+         <h3>Terminal Basico $0.00</h3>
+         <p>O Terminal basico e apenas um terminal sem muitas funcoes como os outros terminais e mais leve para pessoas com compudador ou celulares mais sem desempenho</p>
+       </div> 
+         <div class="servise">
+           <h3>Terminal Completo</h3>
+                <p>O terminal completo oferece tudo de que voce tem direito e todas as ferramentas desenvolvidas ate agora por nos,(esse terminal nao e recomendado para desenvolvedores iniciantes)</p>
+         </div>
+
+
+      <section id="ac">
+        <div class="container">
+          <h2>Como Acessar O Terminal Central </h2>
+          <div class="acc">
+            <h3>Login e Cadastro </h3>
+            <p>Para melhor uso de terminal voce deve fazer entrar na sua conta clicando em login,caso nao tenha uma conta faça clique em cadastro.Isso serve para uma melhor indentificacao de usuario e melhor usso do terminal</p>
+      <a href="LOG/login.html"><Button class="btn">Entar</Button></a>
+      <a href="#"><Button class="btn">Cadastra</Button></a>
+          </div>
+          <div class="accc">
+            <h3>Entrar Como Convidado </h3>
+            <p>Caso queira acessar o terminal central sem uma conta basta entrar como convidado.Para entrar como cconvidado e bem simplis basta clica no botao abaixo coloca um username e entrar no terminal</p>
+            <a href="#"><Button class="btn">Convidado</Button></a>
+          </div>
+        </div>
+      </section>
+      
+   
+    
+  <script src="script.js"></script>
 </body>
-
 </html>
